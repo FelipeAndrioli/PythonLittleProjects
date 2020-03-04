@@ -13,11 +13,14 @@ def ComputerMove():
 def GameRules(userMove, computerMove):
 
     #Victory = 1 - Computer Win!
+    #Victory = 2 - Tie!
     #Victory = 3 - User Win!
 
     if (userMove == computerMove):
         return 2
     elif (userMove == 1 and computerMove == 3):
+        return 1
+    elif (userMove == 1 and computerMove == 2):
         return 1
     elif (userMove == 2 and computerMove == 1):
         return 3
